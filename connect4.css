@@ -1,0 +1,106 @@
+h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 171, 62);
+    font-size: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+
+body {
+    background-color: rgb(67, 255, 139);
+}
+
+
+/* game board table */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+#board {
+    margin: 0 auto;
+}
+  
+#board td {
+width: 60px;
+height: 60px;
+border: solid 2px #000000;
+}
+  
+  /* pieces are div within game table cells: draw as colored circles */
+  
+  .piece {
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  
+  .piece.p1 {
+    background-color: red;
+  }
+  
+  .piece.p2 {
+    background-color: blue;
+  }
+  
+  /* column-top is table row of clickable areas for each column */
+  
+  #column-top td {
+    border: dashed 1px rgb(0, 0, 0);
+  }
+  
+  #column-top td:hover {
+    background-color: rgb(71, 178, 240);
+  }
+  
+  #resetBtn {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  #undoBtn {
+    background-color: rgb(19, 165, 213);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 71%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+  
+  
+ #undoBtn:hover {
+    background-color: rgba(56, 152, 248, 400);
+  }
+
+  #resetBtn:hover {
+    background-color: rgb(219, 31, 31, 20) ;
+  }
